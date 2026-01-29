@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  background: var(--product-gradient, #fff);
+  color: #000;
+  transition: background 0.5s ease-in-out;
+  overflow-x: hidden;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #f97316; /* bg-orange-500 */
+  color: #ffffff;
+}
+
+/* Hide Scrollbar but keep functionality */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
